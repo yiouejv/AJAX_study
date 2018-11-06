@@ -31,6 +31,34 @@ AJAX 阿贾克斯
         支持 XMLHttpRequest: new XMLHttpRequest()
         不支持 XMLHttpRequest: new ActiveXObject('Microsoft.XMLHTTP')
 
+    xhr的成员
+        1. 方法 - open()
+            作用： 创建请求
+            语法： open(method, url, async)
+                method: 请求方法，取值为'get' 或 'post'
+                url: 请求地址，字符串
+                async: 是否采用异步的方式发送请求
+                    true： 异步
+                    false: 同步
+            ex:
+                xhr.open('get', ‘/server/’, true)
+
+        2. 属性 - readyState
+            作用： 请求的状态，通过不同的请求状态值来表示xhr与服务器的交互情况
+            由0-4共五个值来表示5个不同的状态
+            0     请求尚未初始化
+            1     xhr已经与服务器建立链接
+            2     服务器已经开始接收请求
+            3     请求正在处理中
+            4     响应已完成（重要）
+
+        3. 属性 - status
+            作用： 服务器端的响应状态码
+              200： 表示服务器正确处理所有的请求以及给出响应
+              404： 表示请求资源不存在
+              500： 服务器内部错误
+
+
 
 
 
