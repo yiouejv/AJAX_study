@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script>
+        $(function (event) {
+            $("button").click(function () {
+                var name = $("input[id='name']").val();
+                var age = $("input[id='age']").val();
+
+                var xhr = new XMLHttpRequest();
+                xhr.open('post', '/post/', async=true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.status==200 && xhr.readyState==4){
+                        var res = xhr.responseText;
+                        alert(res);
+                    }
+                };
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.send('name='+name+'&'+'age='+age);
+            });
+        });        
+    </script>
+</head>
+<body>
+    <p>
+        姓名：<input type="text" id="name">
+    </p>
+    <p>
+        年龄：<input type="text" id="age">
+    </p>
+    <button>发送post请求</button>
+</body>
+</html>

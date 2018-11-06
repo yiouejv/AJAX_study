@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script>
+        $(function () {
+            var usernameInput = $('input[name="username"]');
+            var passwordInput = $('input[name="password"]');
+            var nameInput = $('input[name="name"]');
+            var tipUsernameSpan = $('#tip-username');
+            var submitBtn = $("#submitBtn");
+
+            usernameInput.blur(function () {
+                var self = $(this);
+                var username = self.val();
+                // 创建xhr对象
+                var xhr = new XMLHttpRequest();
+                // 创建请求
+                xhr.open('post', '/register/', async=true);
+                // 监听状态改变
+                xhr.onreadystatechange = function () {
+                    if (xhr.status == 200 && xhr.readyState == 4){
+                        var res = xhr.responseText;
+                        tipUsernameSpan.text(res);
+                        if (res != '用户名合法'){
+                            tipUsernameSpan.css('color', 'red');
+                        }else{
+                            tipUsernameSpan.css('color', 'green');
+                        }
+                    }
+                };
+                xhr.setRequestHeader("Content-Type", 'application/x-www-form-urlencoded');
+                params = 'username=' + username;
+                xhr.send(params);
+            });
+            
+            submitBtn.click(function () {
+                var tip = tipUsernameSpan.text();
+                if(tip == '用户名合法'){
+                    $('form').submit();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<form action="" method="post">
+    <p>
+        登录名称: <input type="text" name="username"> <span id="tip-username"></span>
+    </p>
+    <p>
+        登录密码: <input type="password" name="password">
+    </p>
+    <p>
+        用户名称: <input type="text" name="name">
+    </p>
+    <p>
+        <input id="submitBtn" type="button" value="注册">
+    </p>
+</form>
+</body>
+</html>
