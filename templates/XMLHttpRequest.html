@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+    <script>
+        $(function () {
+            var cxhr_btn = $('#cxhr_btn');
+            cxhr_btn.click(function () {
+                {#判断浏览器是否支持XMLHttpRequest#}
+                if (window.XMLHttpRequest){
+                    console.log(new XMLHttpRequest());
+                    return new XMLHttpRequest();
+                }else{
+                    console.log(new ActiveXObject());
+                    return new ActiveXObject('Microsoft.XMLHTTP');
+                }
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+    <button id="cxhr_btn">创建xhr对象</button>
+</body>
+</html>
