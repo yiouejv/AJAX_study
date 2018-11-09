@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script>
+        var loadProvince = function () {
+            $.get(
+                "/get_provinces/",
+                function (provinces) {
+                    var html = '';
+                    {#provinces = JSON.parse(provinces);#}
+                    $(provinces).each(function (i, obj) {
+                        html += "<option values="+obj.id+">";
+                        html +=       obj.province_name;
+                        html += "</option>";
+                    });
+                    $("select[name='provices']").html(html);
+                },
+                'json'
+            )};
+
+
+        // 加载城市
+        var loadCitys = function (pid) {
+            $.get(
+                '/citys/' + pid,
+                function (citys) {
+                    var html = '';
+                    $(citys).each(function (i, obj) {
+                        html += "<option value="+ obj.id +">";
+                        html += obj.city_name;
+                        html += "</option>";
+                    });
+                    console.log($("select[name='citys']"));
+                    $("select[name='citys']").html(html)
+                },
+                'json'
+            );
+        };
+
+        $(function () {
+            loadProvince();
+            $("select[name='provices']").change(function () {
+                loadCitys(this.value);
+            });
+        });
+    </script>
+</head>
+<body>
+<select name="provices" id="">
+
+</select>
+<select name="citys" id="">
+    
+</select>
+</body>
+</html>

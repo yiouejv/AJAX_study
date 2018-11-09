@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script>
+        $(function () {
+            $("#btnLoad").click(function () {
+                params = 'name=xxx';
+                params = {
+                    "name": "xxx"
+                };
+                $("#show").load(
+                    '/load_server/',
+                    params,
+                    function (resText, statusText) {
+                        console.log("响应数据成功");
+                        console.log("resText", resText);
+                        console.log("statusText", statusText);
+                    }
+                );
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btnLoad">$obj.load()</button>
+    <div id="show"></div>
+</body>
+</html>

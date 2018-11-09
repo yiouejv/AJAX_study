@@ -1,0 +1,95 @@
+{% from "macros.html" import static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="{{ static("js/jquery.min.js") }}"></script>
+    <script>
+        arr = [
+                    {
+                        "name":"王老师",
+                        "age": 37,
+                        "gender": "男"
+                    },
+                    {
+                        "name": "王夫人",
+                        "age": 15,
+                        "gender": "男",
+                    }
+                ];
+        $(function () {
+            // 为jsonSingle 绑定click事件
+            $("#jsonSingle").click(function () {
+                var jsonObj = {
+                    "name": "MrWang",
+                    "age": 37,
+                    "gender": "男"
+                };
+                console.log("姓名:" + jsonObj.name);
+                console.log("年龄:" + jsonObj.age);
+                console.log("性别:" + jsonObj.gender);
+            });
+            // 为jsonArray绑定click事件
+            $("#jsonArry").click(function () {
+                for (var i=0; i < arr.length; i++){
+                    console.log("姓名：" + arr[i].name);
+                    console.log("年龄：" + arr[i].age);
+                    console.log("性别：" + arr[i].gender);
+                }
+            });
+
+            // 显示所有
+            $("#showAll").click(function () {
+                $(arr).each(function (i, obj) {
+                    var oneRow = $("<tr>\n" +
+                    "                <td>" + obj.name + "</td>\n" +
+                    "                <td>" + obj.age + "</td>\n" +
+                    "                <td>" + obj.gender + "</td>\n" +
+                    "            </tr>");
+                    $("tbody").append(oneRow);
+                })
+            });
+
+            // each1
+            $("#btnEach1").click(function () {
+                $.each(arr, function (i, obj) {
+                    console.log("=====each1======");
+                    console.log('下标' + i);
+                    console.log('姓名：'+ obj.name);
+                    console.log('年龄：'+ obj.age);
+                    console.log('性别：'+ obj.gender);
+                });
+            });
+
+            //each2
+            $("#btnEach2").click(function () {
+                $(arr).each(function (i, obj) {
+                    console.log("=====each2======");
+                    console.log(i);
+                    console.log('姓名：'+ obj.name);
+                    console.log('年龄：'+ obj.age);
+                    console.log('性别：'+ obj.gender);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="jsonSingle">json-单个对象</button>
+    <button id="jsonArry">json-数组</button>
+    <button id="showAll">显示所有</button>
+    <button id="btnEach1">$.each1</button>
+    <button id="btnEach2">$.each2</button>
+    <table>
+        <thead>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+</html>

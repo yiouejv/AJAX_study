@@ -115,6 +115,161 @@ POST 请求
         name 用户名称
 
 
+=====================================
+JSON
+    语法
+        1. 通过一对{} 表示一个对象
+        2. 在{}中允许通过key:value 的形式表示属性
+        3. 多对的属性和值之间使用',' 隔开
+
+    什么是JSON
+        JavaScript Object Notation
+                            表现形式
+        按照js对象的格式所构建出来的字符串就是json
+        在AJAX中允许将复杂格式的响应数据（如列表等构建成json格式的字符串，再进行响应输出）
+
+    JSON的表现
+        1. JSON表示单个对象
+            使用{}表示单个对象
+            在{}中使用key:value的格式表示数据
+            多对属性和值之间使用 , 隔开
+            key必须使用""引起来
+            value如果是字符串的话，也需要用""引起来
+            ex:
+               var obj = {
+                   "name": "MrWang",
+                   "age"： 37,
+                   "gender": "Unknown"
+               }
+
+               var str = '{"name": "MrWang", "age": 37, "gender":"Unknown"}'
+
+        2. JSON表示多个对象
+            1. 使用[](数组)来表示多个对象
+            2. 数组中允许包含多个JSON对象 或 字符串
+                1. 使用JSON数组来表示若干字符串
+                    var arr = ["王老师", "王夫人", "王小超"];
+                    var str = '["王老师", "王夫人", "王小超"]'
+                2. 使用JSON数组来表示若干对象
+                    var arr = [
+                        {
+                            "name":"王老师",
+                            "age": 37,
+                            "gender": "男"
+                        },
+                        {
+                            "name": "王夫人",
+                            "age": 15,
+                            "gender": "男",
+                        }
+                    ];
+
+    使用JQuery的each()迭代数组
+        1. $.each()
+          语法： $.each(arr, function(index, obj){
+                // index: 遍历的元素的下标
+                // obj: 遍历出来的元素
+            });
+
+        2. $obj.each();
+          语法
+            $obj.each(function(index, obj){
+
+            });
+
+
+    后台处理json
+        在后台查询数据时，需要将数据转换为json格式的字符串，再响应给客户端
+      到了前端后再将字符串转换为js对象进行解析
+        1. 后台先获取数据，
+            允许转换的数据类型：元组，列表，字典
+        2. 在后台将数据转换为符合json格式的字符串
+        3. 在后台将json格式字符串进行响应
+
+
+    python 中的json处理
+        使用 python中的json类可以完成转换
+        import json
+        json_str = json.dumps(元组|列表|字典)
+
+
+    前端中的json处理
+        通过以下方式，将json的串转换为JS对象，或数组
+        在js中，JSON.parse(JSON串)
+
+
+
+===================
+1. JQuery AJAX
+  $obj.load(url, data, callback)
+    作用： 异步加载数据到$obj元素中
+    参数：
+        url： 异步请求的地址
+        data： 传输给服务器的参数
+            该数据决定了请求方式是什么
+            1. 可以传递普通的字符串
+                "name=MrWang&age=30"
+            2. 可以是JSON对象
+                {
+                    "name": "MrWang",
+                    "age": 30
+                }
+        callback:
+            请求响应成功后的回调函数（匿名函数）
+            function(resText, statusText){
+                resText: 响应数据
+                statusText: 响应的状态文本
+            }
+2. $.get()
+    语法：
+        $.get(url, data, callback, type);
+    参数
+        url： 异步请求的地址
+        data: 异步请求的参数
+            1. 字符串： name=xxx&age=xxx
+            2. JSON： {"name":"xxx", "name":"xxx"}
+        callback: 请求成功时的回调函数
+            function(resText){
+                resText: 表示响应后的响应数据
+            }
+        type: 响应回来的数据的类型
+            html: 响应回来的数据是html文本
+            text： 响应回来的数据是text文本
+            json： 响应回来的数据是json对象
+            script： 响应回来的数据是js脚本代码
+            注意:
+                如果此处指定了数据类型的话，在callback中就无需再做类型的转换
+
+3. $.post()
+    用法和$.get类似
+
+4. $.ajax()
+    作用
+        自定义所有的ajax的行为
+    语法
+        $.ajax( {ajax设置的参数数据对象} );
+    参数
+        url: 字符串，表示异步请求的地址
+        type: 字符串，表示请求方式
+        data: 传递到服务器的参素
+            1. 字符串： "name=xxx&age=xxx"
+            2. JSON对象： {"name": "value"}
+        dataType: 字符串，响应回来的数据的格式
+            1. html
+            2. xml
+            3. text
+            4. script
+            5. json
+            6. jsonp  有关跨域的响应格式
+        success: 回调函数，请求和响应称的回调函数
+            function(data){
+                data: 表示服务器响应回来的数据
+            }
+        error:  回调函数，请求或响应失败时的回调函数
+        beforeSend: 回调函数，在发送ajax请求之前的回调函数，
+            如果return false的话则表示终止本次请求
+
+
 
 
 

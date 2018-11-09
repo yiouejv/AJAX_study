@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="{{ url_for("static", filename='js/jquery.min.js') }}"></script>
+    <script>
+        $(function () {
+            var xhr = new XMLHttpRequest();
+            xhr.open('get', '/get_list/', async=true);
+            xhr.onreadystatechange = function () {
+                if(xhr.status==200 && xhr.readyState == 4){
+                    var res = xhr.responseText;
+                    var arr = JSON.parse(res);
+                    $(arr).each(function (i, obj) {
+                        var oneRow = $('<tr username='+obj.username+'>\n' +
+                            '                <td>'+obj.username+'</td>\n' +
+                            '                <td>'+obj.password+'</td>\n' +
+                            '                <td>'+obj.name+'</td>\n' +
+                            '                <td> <button class="delBtn">删除</button> </td>\n' +
+                            '            </tr>');
+                        $('tbody').append(oneRow);
+                    });
+                }
+            };
+            xhr.send(null);
+
+
+            // 删除
+            $(".delBtn").click(function () {
+                var self = $(this);
+                var username = self.parent().parent().attr('username');
+                console.log(username);
+                $.post({
+                    url: '/list/',
+                    data:{
+                        username: username
+                    },
+                    callback: function (data) {
+                        alert(data);
+                    }
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>登录名</th>
+                <th>登录密码</th>
+                <th>用户名称</th>
+                <th>删除</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+</html>

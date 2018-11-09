@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="689b9723-3ca7-4ef2-b6e5-bb3a10b73985" name="Default Changelist" comment="" />
+    <list default="true" id="689b9723-3ca7-4ef2-b6e5-bb3a10b73985" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ajax.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/json/all_users.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/json/jq_ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/json/js_object.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/json/json.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/json/json3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/json/json4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/json/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/json/load.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/json/province_city.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/macros.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/XMLHttpRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ajax/XMLHttpRequest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ajax_exercise.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ajax/ajax_exercise.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ajax_get.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ajax/ajax_get.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ajax/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ajax/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记" beforeDir="false" afterPath="$PROJECT_DIR$/笔记" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,54 +31,60 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/AJAX$Flask__app_py___1_.coverage" NAME="Flask (app.py) (1) Coverage Results" MODIFIED="1541493788641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/AJAX$models.coverage" NAME="models Coverage Results" MODIFIED="1541496374498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AJAX$Flask__app_py___1_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1541747279190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AJAX$models.coverage" NAME="models Coverage Results" MODIFIED="1541728299740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AJAX$config.coverage" NAME="config Coverage Results" MODIFIED="1541496133829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AJAX$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1541497688310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/AJAX$Flask.coverage" NAME="Flask Coverage Results" MODIFIED="1541502441770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/AJAX$Flask.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1541581351557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1247866468">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="2694" />
+          <entry key="dummy" value="1" />
+          <entry key="html" value="8512" />
           <entry key="js" value="573" />
-          <entry key="py" value="1889" />
-          <entry key="笔记" value="2615" />
+          <entry key="py" value="5595" />
+          <entry key="笔记" value="5533" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2694" />
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="8511" />
           <entry key="JavaScript" value="573" />
-          <entry key="PLAIN_TEXT" value="2615" />
-          <entry key="Python" value="1889" />
+          <entry key="PLAIN_TEXT" value="5534" />
+          <entry key="Python" value="5595" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="7" />
-          <entry key="js" value="3" />
-          <entry key="py" value="2" />
+          <entry key="html" value="22" />
+          <entry key="js" value="8" />
+          <entry key="py" value="16" />
           <entry key="ts" value="3" />
+          <entry key="笔记" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="7" />
-          <entry key="JavaScript" value="3" />
-          <entry key="Python" value="2" />
+          <entry key="HTML" value="22" />
+          <entry key="JavaScript" value="8" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="16" />
           <entry key="TypeScript" value="3" />
         </counts>
       </usages-collector>
@@ -65,44 +93,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.py">
+        <entry file="file://$PROJECT_DIR$/笔记">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="63" column="41" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="41" />
+            <state relative-caret-position="498">
+              <caret line="271" selection-start-line="271" selection-end-line="271" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/json/jq_ajax.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/json_.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="151" selection-start-line="151" selection-end-line="151" />
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
-                <marker date="1541498735971" expanded="true" signature="288:1816" ph="..." />
-                <marker date="1541498735971" expanded="true" signature="636:1816" ph="..." />
-                <marker date="1541498735971" expanded="true" signature="775:817" ph="..." />
-                <marker date="1541498735971" expanded="true" signature="1011:1816" ph="..." />
+                <element signature="e#99#152#0" expanded="true" />
+                <marker date="1541747234761" expanded="true" signature="399:403" ph="..." />
+                <marker date="1541747234761" expanded="true" signature="717:722" ph="..." />
+                <marker date="1541747234761" expanded="true" signature="803:808" ph="..." />
+                <marker date="1541747234761" expanded="true" signature="1606:1618" ph="..." />
+                <marker date="1541747234761" expanded="true" signature="1673:1674" ph="..." />
+                <marker date="1541747234761" expanded="true" signature="1927:1932" ph="..." />
+                <marker date="1541747234761" expanded="true" signature="2630:2771" ph="..." />
+                <marker date="1541747234761" expanded="true" signature="3112:3163" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/笔记">
+        <entry file="file://$PROJECT_DIR$/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2310">
-              <caret line="105" column="69" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/common.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+            <state relative-caret-position="188">
+              <caret line="51" column="22" lean-forward="true" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+              <folding>
+                <element signature="e#98#146#0" expanded="true" />
+                <marker date="1541745013768" expanded="true" signature="1020:1445" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,6 +155,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>jQuery.</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -131,12 +172,26 @@
         <option value="$PROJECT_DIR$/static/js/common.js" />
         <option value="$PROJECT_DIR$/templates/ajax_exercise.html" />
         <option value="$PROJECT_DIR$/templates/post.html" />
-        <option value="$PROJECT_DIR$/笔记" />
         <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/models.py" />
         <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/register.html" />
+        <option value="$PROJECT_DIR$/ajax.py" />
+        <option value="$PROJECT_DIR$/json.py" />
+        <option value="$PROJECT_DIR$/templates/macros.html" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/templates/json/all_users.html" />
+        <option value="$PROJECT_DIR$/templates/json/js_object.html" />
+        <option value="$PROJECT_DIR$/templates/json/json.html" />
+        <option value="$PROJECT_DIR$/templates/json/json3.html" />
+        <option value="$PROJECT_DIR$/templates/json/json4.html" />
+        <option value="$PROJECT_DIR$/templates/json/list.html" />
+        <option value="$PROJECT_DIR$/templates/json/02-load.html" />
+        <option value="$PROJECT_DIR$/templates/json/load.html" />
+        <option value="$PROJECT_DIR$/models.py" />
+        <option value="$PROJECT_DIR$/templates/json/province_city.html" />
+        <option value="$PROJECT_DIR$/笔记" />
+        <option value="$PROJECT_DIR$/json_.py" />
+        <option value="$PROJECT_DIR$/templates/json/jq_ajax.html" />
       </list>
     </option>
   </component>
@@ -152,7 +207,9 @@
     <option name="width" value="1379" />
     <option name="height" value="776" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -182,6 +239,12 @@
               <item name="AJAX" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AJAX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AJAX" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="json" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -195,12 +258,13 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/ajax" />
       <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -215,8 +279,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flask server.Flask">
-    <configuration name="XMLHttpRequest.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AJAX/templates/XMLHttpRequest.html">
+  <component name="RunManager" selected="Flask server.Flask (app.py) (1)">
+    <configuration name="XMLHttpRequest.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AJAX/templates/ajax/XMLHttpRequest.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="js_object.html" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:63342/AJAX/templates/json/js_object.html">
       <method v="2" />
     </configuration>
     <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -311,14 +378,31 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Flask" type="Python.FlaskServer" factoryName="Flask server" temporary="true" nameIsGenerated="true">
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" factoryName="Flask server" temporary="true" nameIsGenerated="true">
+      <option name="additionalOptions" value="" />
+      <option name="application" value="" />
       <module name="AJAX" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" factoryName="Flask server" temporary="true" nameIsGenerated="true">
+      <module name="AJAX" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -328,19 +412,20 @@
     </configuration>
     <list>
       <item itemvalue="Flask server.AJAX" />
+      <item itemvalue="JavaScript Debug.js_object.html" />
       <item itemvalue="Flask server.Flask (app.py)" />
       <item itemvalue="JavaScript Debug.XMLHttpRequest.html" />
       <item itemvalue="Python.config" />
       <item itemvalue="Python.models" />
-      <item itemvalue="Flask server.Flask" />
+      <item itemvalue="Flask server.Flask (app.py) (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Flask server.Flask" />
+        <item itemvalue="Flask server.Flask (app.py) (1)" />
         <item itemvalue="Python.models" />
+        <item itemvalue="Flask server.Flask (app.py)" />
         <item itemvalue="Python.config" />
         <item itemvalue="Flask server.Flask (app.py)" />
-        <item itemvalue="JavaScript Debug.XMLHttpRequest.html" />
       </list>
     </recent_temporary>
   </component>
@@ -358,15 +443,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1853" height="939" extended-state="7" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19292426" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993464" visible="true" weight="0.16105902" />
+      <window_info id="Structure" order="1" sideWeight="0.5006536" side_tool="true" weight="0.1947049" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24349636" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31529656" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -390,29 +475,39 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/templates/json/list.html</url>
+          <line>32</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/templates/json/province_city.html</url>
+          <line>35</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/XMLHttpRequest.html">
+    <entry file="file://$PROJECT_DIR$/templates/ajax/XMLHttpRequest.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="60" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ajax_get.html">
+    <entry file="file://$PROJECT_DIR$/templates/ajax/ajax_get.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ajax_exercise.html">
+    <entry file="file://$PROJECT_DIR$/templates/ajax/ajax_exercise.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="80" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="80" />
@@ -426,7 +521,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/post.html">
+    <entry file="file://$PROJECT_DIR$/templates/ajax/post.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
@@ -440,38 +535,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models.py">
+    <entry file="file://$PROJECT_DIR$/templates/ajax/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.5/dist-packages/django/contrib/admin/static/admin/js/vendor/jquery/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="7914" selection-start-line="7914" selection-end-line="7914" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="63" column="41" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-            <marker date="1541498735971" expanded="true" signature="288:1816" ph="..." />
-            <marker date="1541498735971" expanded="true" signature="636:1816" ph="..." />
-            <marker date="1541498735971" expanded="true" signature="775:817" ph="..." />
-            <marker date="1541498735971" expanded="true" signature="1011:1816" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/笔记">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="105" column="69" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="69" />
+        <state relative-caret-position="572">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -482,10 +549,172 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register.html">
+    <entry file="file://$PROJECT_DIR$/ajax.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        <state relative-caret-position="154">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#99#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/flask/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/macros.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="725" lean-forward="true" selection-start-line="3" selection-start-column="725" selection-end-line="3" selection-end-column="725" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/json/json.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="57" column="42" lean-forward="true" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/json/json3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/json/json4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/json/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/sqlalchemy/sql/schema.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="1288" selection-start-line="1288" selection-end-line="1288" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/sqlalchemy/orm/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="134" column="25" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/json/js_object.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/json/all_users.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1541556203152" expanded="true" signature="164:165" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3/dist-packages/django/contrib/admin/static/admin/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="9350" selection-start-line="9350" selection-end-line="9350" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="51" column="22" lean-forward="true" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+          <folding>
+            <element signature="e#98#146#0" expanded="true" />
+            <marker date="1541745013768" expanded="true" signature="1020:1445" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/json/province_city.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/json/load.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/笔记">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="271" selection-start-line="271" selection-end-line="271" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/django/contrib/admin/static/admin/js/vendor/jquery/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1352">
+          <caret line="7919" column="19" selection-start-line="7919" selection-start-column="14" selection-end-line="7919" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="151" selection-start-line="151" selection-end-line="151" />
+          <folding>
+            <element signature="e#99#152#0" expanded="true" />
+            <marker date="1541747234761" expanded="true" signature="399:403" ph="..." />
+            <marker date="1541747234761" expanded="true" signature="717:722" ph="..." />
+            <marker date="1541747234761" expanded="true" signature="803:808" ph="..." />
+            <marker date="1541747234761" expanded="true" signature="1606:1618" ph="..." />
+            <marker date="1541747234761" expanded="true" signature="1673:1674" ph="..." />
+            <marker date="1541747234761" expanded="true" signature="1927:1932" ph="..." />
+            <marker date="1541747234761" expanded="true" signature="2630:2771" ph="..." />
+            <marker date="1541747234761" expanded="true" signature="3112:3163" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/json/jq_ajax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
         </state>
       </provider>
     </entry>
